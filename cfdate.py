@@ -107,7 +107,6 @@ def create_calendar_event(service, round_num, division, start_time, duration):
 
         existing_events = events_result.get('items', [])
         if existing_events:
-            print("Event already exists in the calendar.")
             return False
 
         event = {
